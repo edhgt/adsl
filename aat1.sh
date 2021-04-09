@@ -29,19 +29,19 @@ usermod -aG jefatura jefatura1
 
 
 # Agregando propietario a las carpetas
-chown -R control1:control_academico /home/INTECAP/CONTROL\ ACADEMICO
-chown -R orientacion1:orientacion /home/INTECAP/ORIENTACION
-chown -R soporte1:soporte /home/INTECAP/SOPORTE
-chown -R jefatura1:jefatura /home/INTECAP/JEFATURA
+chown -R control1 /home/INTECAP/CONTROL\ ACADEMICO
+chown -R orientacion1 /home/INTECAP/ORIENTACION
+chown -R soporte1 /home/INTECAP/SOPORTE
+chown -R jefatura1 /home/INTECAP/JEFATURA
 
 # Agregando todos los permisos de usuario propietario
-chmod -R u=rwx /home/INTECAP/CONTROL\ ACADEMICO
-chmod -R u=rwx /home/INTECAP/ORIENTACION
-chmod -R u=rwx /home/INTECAP/SOPORTE
-chmod -R u=rwx /home/INTECAP/JEFATURA
+chmod -R u=+rwx /home/INTECAP/CONTROL\ ACADEMICO
+chmod -R u=+rwx /home/INTECAP/ORIENTACION
+chmod -R u=+rwx /home/INTECAP/SOPORTE
+chmod -R u=+rwx /home/INTECAP/JEFATURA
 
 # Agregando todos los permisos de grupo
-chmod -R g=rw-x /home/INTECAP/CONTROL\ ACADEMICO
+chmod -R g=+rw-x /home/INTECAP/CONTROL\ ACADEMICO
 chmod -R g=-r+wx /home/INTECAP/ORIENTACION
 chmod -R g=-rw+x /home/INTECAP/SOPORTE
 chmod -R g=+rwx /home/INTECAP/JEFATURA
