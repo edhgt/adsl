@@ -8,7 +8,7 @@ su root -
 cp /etc/apt/sources.list /etc/apt/sources.list.backup
 
 # second
-wget --no-check-certificate -P /etc/apt https://raw.github.com/dhernandz7/adl/main/debian/8.2/sources.list
+wget --no-check-certificate -P /etc/apt https://raw.github.com/dhernandz7/adsl/main/configuraciones/debian/8.2/sources.list
 
 apt-get -y install deb-multimedia-keyring
 

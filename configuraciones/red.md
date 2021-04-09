@@ -25,7 +25,7 @@ iface eth0 inet static
 	broadcast 192.168.10.255
 	gateway 192.168.10.254
 
-
+192.168.80.0/24
 reiniciar servicio de red
 sudo systemctl restart networking
 

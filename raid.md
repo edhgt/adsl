@@ -11,7 +11,7 @@ lsblk
 
 mdadm --detail /dev/md5
 
-mdadm --create --verbose /dev/md5 --level=5 --raid-devices=3 /dev/sdb1
+mdadm --create --verbose /dev
 /dev/sdc1 /dev/sdd1
 
 
