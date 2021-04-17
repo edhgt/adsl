@@ -1,20 +1,18 @@
-# 
-
-# buster-oficiales
-deb http://ftp.us.debian.org/debian/ buster main contrib non-free
-deb-src http://ftp.us.debian.org/debian/ buster main contrib non-free
-
-# buster-actualizaciones-seguridad
+# Repositorio base estable.
+deb http://deb.debian.org/debian/ buster main contrib non-free
+deb-src http://deb.debian.org/debian/ buster main contrib non-free
+ 
+# Repositorio de actualizaciones de seguridad
 deb http://security.debian.org/debian-security buster/updates main contrib non-free
 deb-src http://security.debian.org/debian-security buster/updates main contrib non-free
-
-# buster-updates, previously known as 'volatile'
-deb http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
-deb-src http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
-
-# debian-multimedia
+ 
+# Repositorio de actualizaciones anteriormente conocido como "Volátil"
+deb http://deb.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ buster-updates main contrib non-free
+ 
+# Backports contrib
+deb http://deb.debian.org/debian buster-backports main contrib non-free
+deb-src http://deb.debian.org/debian buster-backports main contrib non-free
+ 
+# Repositorio multimedia
 deb http://www.deb-multimedia.org buster main non-free
-
-# adiciones propuestas para una versión de Debian 10
-deb http://deb.debian.org/debian buster-proposed-updates main contrib non-free
-
