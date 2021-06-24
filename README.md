@@ -24,7 +24,8 @@ Paso tres: Descargar sources.list y actualizar repositorio
 ```sh
 wget --no-check-certificate -P /etc/apt https://raw.github.com/dhernandz7/adl/main/debian/8.2/sources.list
 
-apt-get -y install deb-multimedia-keyring
+apt-get update -oAcquire::AllowInsecureRepositories=true
+apt-get install deb-multimedia-keyring
 
 apt-get update
 ```

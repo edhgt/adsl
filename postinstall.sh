@@ -1,0 +1,1 @@
+apt install linux-headers-$(uname -r|sed 's/[^-]*-[^-]*-//') build-essential make automake cmake autoconf
