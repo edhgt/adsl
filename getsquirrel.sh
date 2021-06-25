@@ -1,0 +1,1 @@
+wget https://squirrelmail.org/countdl.php?fileurl=http%3A%2F%2Fsnapshots.squirrelmail.org%2Fsquirrelmail-20210625_0200-SVN.stable.tar.gz
