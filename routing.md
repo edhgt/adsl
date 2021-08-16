@@ -1,3 +1,4 @@
+
 # Routing
 
 ## Rutas estáticas
@@ -15,7 +16,7 @@ ipaddr
 hostnamectl set-hostname router1
 
 # paquetería para convertir en enrutador a debian
-# quoada
+# quoada7
 apt install quagga telnet nmap
 ```
 
@@ -99,8 +100,9 @@ copy running-config startup-config #guardar
 
 show running-config
 
-# configurar ruta de salto 
 
+# configurar ruta de salto 
+12 
 configure terminal
 #r1
 ip route 172.16.0.0/16  5.5.5.2
