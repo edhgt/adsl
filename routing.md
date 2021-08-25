@@ -27,20 +27,13 @@ ls
 # daemons
 # debian.conf
 
-vi debian.conf
-
 # habilitar el reenvío de paquetes
 vi /etc/sysctl.conf
+
 net.ipv4.ip_forward=1
 # guardar
 
 sysctl -w net.ipv4.ip_forward=1
-systemctl start zebra
-nmap localhost
-
-# reiniciar servicio de red
-service networking restart
-service networking status
 
 # editar daemons
 vi daemons
@@ -71,6 +64,10 @@ enable password zebra
 #guardar
 
 
+# reiniciar servicio de red
+service networking restart
+systemctl start zebra
+service networking status
 # acceder a la interfaz de  confgiuración de zebra
 telnet localhost zebra
 
