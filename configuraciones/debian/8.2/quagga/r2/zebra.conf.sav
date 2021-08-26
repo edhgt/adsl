@@ -1,0 +1,26 @@
+!
+! Zebra configuration saved from vty
+!   2021/08/24 19:56:24
+!
+hostname srvdebian2
+password zebra
+enable password zebra
+!
+interface eth0
+ ip address 5.5.0.2/30
+ ipv6 nd suppress-ra
+!
+interface eth1
+ ip address 172.16.3.251/22
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+ip route 10.0.0.0/24 5.5.0.1
+ip route 172.16.0.0/22 5.5.0.2
+!
+ip forwarding
+!
+!
+line vty
+!
