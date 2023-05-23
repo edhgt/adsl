@@ -1,8 +1,8 @@
-deb [arch=amd64] http://ftp.mx.debian.org/debian/ jessie main contrib non-free
-deb-src [arch=amd64] http://ftp.mx.debian.org/debian/ jessie main contrib non-free
+deb http://cdn-fastly.deb.debian.org/debian/ jessie main
+deb-src http://cdn-fastly.deb.debian.org/debian/ jessie main
 
-deb [arch=amd64] http://ftp.mx.debian.org/debian/ jessie-updates main contrib non-free
-deb-src [arch=amd64] http://ftp.mx.debian.org/debian/ jessie-updates main contrib non-free
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
 
-deb [arch=amd64] http://security.debian.org/ jessie/updates main contrib non-free
-deb-src [arch=amd64] http://security.debian.org/ jessie/updates main contrib non-free
+deb http://archive.debian.org/debian jessie-backports main
+deb-src http://archive.debian.org/debian jessie-backports main
